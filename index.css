@@ -20,7 +20,7 @@ body {
   margin: 0 auto; /* Center the container */
   padding: 20px; /* Padding inside the container */
   background-color: #ece099;
-  border-radius: 180px;
+  border-radius: 18px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -100,10 +100,8 @@ h5 {
   /* Media query for smaller screens */
   body {
     font-size: 14px; /* Reduced font size for smaller screens */
-   border-radius: 180px;
   }
   .container {
-   border-radius: 180px;
     padding: 10px; /* Reduced padding for smaller screens */
     margin: 0 10px; /* Reduced margin for smaller screens */
   }
