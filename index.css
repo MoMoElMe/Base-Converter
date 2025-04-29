@@ -96,7 +96,7 @@ h5 {
   border: 4px solid #45a049; /* Border color for selected box */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 100px) {
   /* Media query for smaller screens */
   body {
     font-size: 14px; /* Reduced font size for smaller screens */
