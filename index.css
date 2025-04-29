@@ -1,0 +1,113 @@
+/* Shira koka, Moshe Meron */
+
+/* CSS file for the currency converter application 
+ This CSS file styles the currency converter application, including the layout, colors, and responsive design. 
+ The styles are designed to create a clean and user-friendly interface for the currency conversion process. 
+ The CSS file includes styles for the body, container, headings, input fields, buttons, and media queries for responsiveness. */
+
+body {
+  /* defining the body styles */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 600px; /* Maximum width of the container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Padding inside the container */
+  background-color: #ece099;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #000000;
+}
+
+h3,
+h4,
+h5 {
+  text-align: center;
+  color: #555555;
+}
+
+#from_box,
+#to_box {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+#from_box div,
+#to_box div {
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#input {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-attachment: fixed;
+  input {
+    /* Input field styles */
+    width: 345px; /* Width of the input field */
+    padding: 18px;
+    border: 6px solid #ccc; /* Border color of the input field */
+    border-radius: 50px; /* Rounded corners for the input field */
+    font-size: 18px; /* Font size of the input field */
+  }
+}
+
+#convert {
+  width: 345px; /* Width of the convert button */
+  justify-content: center;
+  display: flex;
+  justify-self: center;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #4caf50; /* background color of the convert button */
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#convert:hover {
+  background-color: #45a049; /* hover effect for the convert button */
+}
+
+#result {
+  text-align: center; /* Center the result text */
+  margin: 26px 0;
+}
+
+.selected {
+  border: 4px solid #45a049; /* Border color for selected box */
+}
+
+@media (max-width: 600px) {
+  /* Media query for smaller screens */
+  body {
+    font-size: 14px; /* Reduced font size for smaller screens */
+  }
+  .container {
+    padding: 10px; /* Reduced padding for smaller screens */
+    margin: 0 10px; /* Reduced margin for smaller screens */
+  }
+
+  #from_box,
+  #to_box {
+    flex-direction: column; /* Stack the boxes vertically on smaller screens */
+    align-items: center; /* Center align the boxes */
+  }
+}

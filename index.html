@@ -1,0 +1,66 @@
+<!--Shira koka, Moshe Meron -->
+
+<!--This is the main HTML file for the base converter project.
+ It contains the structure of the page, including the input and output sections, as well as the buttons for conversion.
+The CSS file is linked for styling, and the JavaScript file is linked for functionality.-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <!--link to css file-->
+    <title>index</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!--container for the whole page-->
+      <div><h1>Bace Converter</h1></div>
+      <div>
+        <h5>
+          Convert numbers between different bases (Binary, Decimal, Hex, Octal)
+        </h5>
+      </div>
+
+      <div id="from">
+        <h3>FROM:</h3>
+        <div id="from_box">
+          <!--box to choose which base will be an input-->
+          <div id="binary"><h4>Binary(2)</h4></div>
+          <div id="octal"><h4>Octal(8)</h4></div>
+          <div id="decimal"><h4>Decimal(10)</h4></div>
+          <div id="hex"><h4>Hexadecimal(16)</h4></div>
+        </div>
+      </div>
+
+      <div id="input"></div>
+
+      <div id="to">
+        <div><h3>TO:</h3></div>
+        <div id="to_box">
+          <!--box to choose which base will be outputted-->
+          <div id="binary"><h4>Binary(2)</h4></div>
+          <div id="octal"><h4>Octal(8)</h4></div>
+          <div id="decimal"><h4>Decimal(10)</h4></div>
+          <div id="hex"><h4>Hexadecimal(16)</h4></div>
+        </div>
+      </div>
+
+      <div id="result">
+        <!--box to show the result of the conversion-->
+        <h3>Result:</h3>
+
+        <div id="output"></div>
+        <!--output of the conversion-->
+      </div>
+
+      <div id="convert">
+        <!--button to convert the number-->
+        <h5><b>Convert</b></h5>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+    <!--link to js file-->
+  </body>
+</html>
