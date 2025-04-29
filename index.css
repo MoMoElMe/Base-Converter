@@ -102,6 +102,7 @@ h5 {
     font-size: 14px; /* Reduced font size for smaller screens */
   }
   .container {
+   border-radius: 180px;
     padding: 10px; /* Reduced padding for smaller screens */
     margin: 0 10px; /* Reduced margin for smaller screens */
   }
